@@ -5,9 +5,10 @@ import {
   index,
   show,
   store,
+  storeReview,
   update,
   destroy,
-} from "../controllers/booksController.js";
+} from "../controllers/bookController.js";
 //Rotte
 
 // Index - Read all
@@ -18,6 +19,9 @@ router.get("/:id", show);
 
 //Store - Create
 router.post("/", store);
+
+//StoreReview - Create
+router.post("/:id/reviews", storeReview);
 
 //Update - Update  totale
 router.put("/:id", update);

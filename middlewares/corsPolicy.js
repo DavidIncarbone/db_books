@@ -21,3 +21,4 @@ export default function corsPolicy(req, res, next) {
   // Pass to next layer of middleware
   next();
 }
+
